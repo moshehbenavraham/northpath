@@ -1,0 +1,15 @@
+# Roadmapper robots policy
+# Public pages (Landing, Login, Signup) are crawlable.
+# Authenticated app routes and transient auth flows are blocked.
+
+User-agent: *
+Allow: /
+Allow: /login
+Allow: /signup
+Disallow: /app
+Disallow: /app/
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /invite/
+
+Sitemap: https://roadmapper.app/sitemap.xml
